@@ -21,7 +21,7 @@
     <div align="center">
 
 
-      <ion-select [(ngModel)]="val" style="font-size:20px; font-weight:bold; font-family: 'Montserrat', sans-serif; color:#ffffff">
+      <ion-select [(ngModel)]="val" id="select">
        <ion-option value="f">Abu Dhabi</ion-option>
        <ion-option value="m">Dubai</ion-option>
       </ion-select>
@@ -29,7 +29,7 @@
 
   </div>
     <ion-item color="danger" no-lines>
-    <ion-searchbar padding style="font-size:12px; font-weight:bold; font-family: 'Montserrat', sans-serif;"
+    <ion-searchbar padding id="search"
       placeholder="Search for products, services, etc.">
     </ion-searchbar>
   </ion-item>
@@ -38,44 +38,44 @@
 
 <ion-content>
 
-  <ion-label text-center style="font-size:12px; font-weight:bold; font-family: 'Montserrat', sans-serif;color:#989898">BROWSE BY CATEGORIES</ion-label>
+  <ion-label text-center id="title">BROWSE BY CATEGORIES</ion-label>
   <ion-row>
   <ion-col col-3>
     <ion-thumbnail >
       <div align="center">
-      <img src="http://icons.iconarchive.com/icons/aha-soft/large-home/256/Property-icon.png" style="height:50%; width:50%" />
+      <img src="http://icons.iconarchive.com/icons/aha-soft/large-home/256/Property-icon.png" id="img" />
       </div>
-      <p style="font-size:12px; text-align:center; font-family: 'Montserrat', sans-serif;color:#7a7979">Properties</p>
+      <p id="imgDesc">Properties</p>
     </ion-thumbnail>
   </ion-col>
   <ion-col col-3>
     <ion-thumbnail>
       <div align="center">
-      <img src="http://icons.iconarchive.com/icons/bartkowalski/1960-matchbox-cars/256/Refrigeration-Truck-with-Open-Door-icon.png" style="height:50%; width:50%"/>
+      <img src="http://icons.iconarchive.com/icons/bartkowalski/1960-matchbox-cars/256/Refrigeration-Truck-with-Open-Door-icon.png" id="img"/>
       </div>
-      <p style="font-size:12px; text-align:center; font-family: 'Montserrat', sans-serif; color:#7a7979">Move</p>
+      <p id="imgDesc">Move</p>
     </ion-thumbnail>
   </ion-col>
   <ion-col col-3>
     <ion-thumbnail>
       <div align="center">
-      <img src="http://icons.iconarchive.com/icons/dapino/beach/256/beach-chair-icon.png" style="height:50%; width:50%"/>
+      <img src="http://icons.iconarchive.com/icons/dapino/beach/256/beach-chair-icon.png" id="img"/>
       </div>
-      <p style="font-size:12px; text-align:center; font-family: 'Montserrat', sans-serif; color:#7a7979">Pre Owned</p>
+      <p id="imgDesc">Pre Owned</p>
     </ion-thumbnail>
   </ion-col>
   <ion-col col-3>
     <ion-thumbnail>
       <div align="center">
-      <img src="http://icons.iconarchive.com/icons/cemagraphics/classic-cars/256/chevrolet-impala-icon.png" style="height:50%; width:50%"/>
+      <img src="http://icons.iconarchive.com/icons/cemagraphics/classic-cars/256/chevrolet-impala-icon.png" id="img"/>
       </div>
-      <p style="font-size:12px; text-align:center; font-family: 'Montserrat', sans-serif; color:#7a7979">Classfieds</p>
+      <p id="imgDesc">Classfieds</p>
     </ion-thumbnail>
   </ion-col>
   </ion-row>
 
-<ion-item-divider no-lines style="background-color:#f5f5f0">
-  <ion-label style="font-size:12px; font-family: 'Montserrat', sans-serif; color:#a09f9f">Featured Items</ion-label>
+<ion-item-divider no-lines id="divider">
+  <ion-label id="dividerLabel">Featured Items</ion-label>
 </ion-item-divider>
 
 
@@ -104,11 +104,11 @@
           <ion-card-content>
             <p style="text-align:left">Vegeatble Seed</p>
             <ion-row>
-            <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-            <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-            <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-            <ion-col col-2><ion-icon name="star-half" style="color:#ffd11a"></ion-icon></ion-col>
-            <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+            <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+            <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+            <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+            <ion-col col-2><ion-icon name="star-half" id="star"></ion-icon></ion-col>
+            <ion-col col-2><ion-icon name="star-outline" id="star"></ion-icon></ion-col>
             </ion-row>
           </ion-card-content>
         </ion-card>
@@ -116,15 +116,15 @@
 
        <ion-slide>
          <ion-card>
-           <img src="assets/img/burger.jpg"/>
+           <img src="https://lh3.googleusercontent.com/J5kxgHiCAhckevta7kSQH-xcCusRIal9PyCw1xKtkMaFBcx2th22aKUSOXGjGo8_g2ZpWLZDGNbX56e1Dgk_EbHSOW-ntGD8EQG4uPSd_5T089AkKhpj0ZxeXoei9otBtnlRr3Mx5tFuNN95qgk516_d9X49Cuwr2q2vR-kguyztMjpBw_O-IWwGOGksf2Cr0CERfO4Qhw8SyDtlqFbQaIBeDwQpECxLB-f7STqnRknahfzOUW5YpBBVisdQoQdwbW8PuelNG26xi4x7EORcGC4vInUJ7dtwylqQnORrlSw8Ue0QcPAht9Svs9hO_aTgB5DqO8o4N0Xkc0yqImG1yqNX2feYlxIE3jpfLbu7Fyn6uqskYSdPfaR-y91glheGObnvYCMNIs8WF_p4riQstgiEOjCtcmPuoWN-u3jjRakqM3mCwONXjTQnEnOgdD3HpawEHcTfHeWuISYEixrRDFp-8gjDnSYjm-W4GDYRANKws8xgMx-BRhEjcg1TRbnOzujBDSchpBb5d059lwxCtT9ePuMPIyGiNVJzhFGmeAo4jWYmWS0RrMTmSDDIcobjAEe22JEBfKOnETXzHXnUH-VclNjmNDgWLvGcB8Usa1G67YUjMIMk=w834-h654-no"/>
            <ion-card-content>
              <p style="text-align:left">Burger Shop</p>
              <ion-row>
-             <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-             <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-             <ion-col col-2><ion-icon name="star-half" style="color:#ffd11a"></ion-icon></ion-col>
-             <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
-             <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+             <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+             <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+             <ion-col col-2><ion-icon name="star-half" id="star"></ion-icon></ion-col>
+             <ion-col col-2><ion-icon name="star-outline" id="star"></ion-icon></ion-col>
+             <ion-col col-2><ion-icon name="star-outline" id="star"></ion-icon></ion-col>
              </ion-row>
            </ion-card-content>
          </ion-card>
@@ -136,11 +136,11 @@
               <ion-card-content>
                   <p style="text-align:left"> Vegeatble seeds</p>
                   <ion-row>
-                  <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-                  <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-                  <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-                  <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
-                  <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+                  <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+                  <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+                  <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+                  <ion-col col-2><ion-icon name="star-outline" id="star"></ion-icon></ion-col>
+                  <ion-col col-2><ion-icon name="star-outline" id="star"></ion-icon></ion-col>
                   </ion-row>
               </ion-card-content>
           </ion-card>
@@ -148,15 +148,15 @@
 
           <ion-slide>
             <ion-card>
-              <img src="assets/img/burger.jpg"/>
+              <img src="https://lh3.googleusercontent.com/J5kxgHiCAhckevta7kSQH-xcCusRIal9PyCw1xKtkMaFBcx2th22aKUSOXGjGo8_g2ZpWLZDGNbX56e1Dgk_EbHSOW-ntGD8EQG4uPSd_5T089AkKhpj0ZxeXoei9otBtnlRr3Mx5tFuNN95qgk516_d9X49Cuwr2q2vR-kguyztMjpBw_O-IWwGOGksf2Cr0CERfO4Qhw8SyDtlqFbQaIBeDwQpECxLB-f7STqnRknahfzOUW5YpBBVisdQoQdwbW8PuelNG26xi4x7EORcGC4vInUJ7dtwylqQnORrlSw8Ue0QcPAht9Svs9hO_aTgB5DqO8o4N0Xkc0yqImG1yqNX2feYlxIE3jpfLbu7Fyn6uqskYSdPfaR-y91glheGObnvYCMNIs8WF_p4riQstgiEOjCtcmPuoWN-u3jjRakqM3mCwONXjTQnEnOgdD3HpawEHcTfHeWuISYEixrRDFp-8gjDnSYjm-W4GDYRANKws8xgMx-BRhEjcg1TRbnOzujBDSchpBb5d059lwxCtT9ePuMPIyGiNVJzhFGmeAo4jWYmWS0RrMTmSDDIcobjAEe22JEBfKOnETXzHXnUH-VclNjmNDgWLvGcB8Usa1G67YUjMIMk=w834-h654-no"/>
               <ion-card-content>
                 <p style="text-align:left">Burger Shop</p>
                 <ion-row>
-                <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-                <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-                <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-                <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
-                <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+                <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+                <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+                <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+                <ion-col col-2><ion-icon name="star" id="star"></ion-icon></ion-col>
+                <ion-col col-2><ion-icon name="star-outline" id="star"></ion-icon></ion-col>
                 </ion-row>
               </ion-card-content>
             </ion-card>
