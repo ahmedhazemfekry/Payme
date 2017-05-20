@@ -1,0 +1,170 @@
+
+
+<ion-header no-border>
+  <ion-navbar color="danger">
+
+    <ion-buttons left>
+        <button ion-button>  <ion-icon ios="ios-settings-outline" md="md-settings"></ion-icon></button>
+    </ion-buttons>
+
+    <ion-title></ion-title>
+
+    <ion-buttons right>
+      <button ion-button><ion-icon name="notifications-outline"></ion-icon></button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+
+
+  <ion-toolbar color="danger">
+    <div align="center">
+
+
+      <ion-select [(ngModel)]="val" style="font-size:20px; font-weight:bold; font-family: 'Montserrat', sans-serif; color:#ffffff">
+       <ion-option value="f">Abu Dhabi</ion-option>
+       <ion-option value="m">Dubai</ion-option>
+      </ion-select>
+
+
+  </div>
+    <ion-item color="danger" no-lines>
+    <ion-searchbar padding style="font-size:12px; font-weight:bold; font-family: 'Montserrat', sans-serif;"
+      placeholder="Search for products, services, etc.">
+    </ion-searchbar>
+  </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-label text-center style="font-size:12px; font-weight:bold; font-family: 'Montserrat', sans-serif;color:#989898">BROWSE BY CATEGORIES</ion-label>
+  <ion-row>
+  <ion-col col-3>
+    <ion-thumbnail >
+      <div align="center">
+      <img src="http://icons.iconarchive.com/icons/aha-soft/large-home/256/Property-icon.png" style="height:50%; width:50%" />
+      </div>
+      <p style="font-size:12px; text-align:center; font-family: 'Montserrat', sans-serif;color:#7a7979">Properties</p>
+    </ion-thumbnail>
+  </ion-col>
+  <ion-col col-3>
+    <ion-thumbnail>
+      <div align="center">
+      <img src="http://icons.iconarchive.com/icons/bartkowalski/1960-matchbox-cars/256/Refrigeration-Truck-with-Open-Door-icon.png" style="height:50%; width:50%"/>
+      </div>
+      <p style="font-size:12px; text-align:center; font-family: 'Montserrat', sans-serif; color:#7a7979">Move</p>
+    </ion-thumbnail>
+  </ion-col>
+  <ion-col col-3>
+    <ion-thumbnail>
+      <div align="center">
+      <img src="http://icons.iconarchive.com/icons/dapino/beach/256/beach-chair-icon.png" style="height:50%; width:50%"/>
+      </div>
+      <p style="font-size:12px; text-align:center; font-family: 'Montserrat', sans-serif; color:#7a7979">Pre Owned</p>
+    </ion-thumbnail>
+  </ion-col>
+  <ion-col col-3>
+    <ion-thumbnail>
+      <div align="center">
+      <img src="http://icons.iconarchive.com/icons/cemagraphics/classic-cars/256/chevrolet-impala-icon.png" style="height:50%; width:50%"/>
+      </div>
+      <p style="font-size:12px; text-align:center; font-family: 'Montserrat', sans-serif; color:#7a7979">Classfieds</p>
+    </ion-thumbnail>
+  </ion-col>
+  </ion-row>
+
+<ion-item-divider no-lines style="background-color:#f5f5f0">
+  <ion-label style="font-size:12px; font-family: 'Montserrat', sans-serif; color:#a09f9f">Featured Items</ion-label>
+</ion-item-divider>
+
+
+<ion-segment [(ngModel)]="val2">
+  <ion-segment-button value="classified">
+    Classified
+  </ion-segment-button>
+  <ion-segment-button value="move">
+    Move
+  </ion-segment-button>
+  <ion-segment-button value="per-owned">
+    Per Owned
+  </ion-segment-button>
+  <ion-segment-button value="other-categories">
+    Others
+  </ion-segment-button>
+</ion-segment>
+
+ <ion-row>
+    <ion-slides loop=true slidesPerView=2>
+      <ion-slide>
+        <ion-card>
+          <div align="center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9lr06MgLbsF-sHPqo2pbML43lxet6x77Bb0R2ohviN52jF-V" />
+          </div>
+          <ion-card-content>
+            <p style="text-align:left">Vegeatble Seed</p>
+            <ion-row>
+            <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+            <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+            <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+            <ion-col col-2><ion-icon name="star-half" style="color:#ffd11a"></ion-icon></ion-col>
+            <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+       </ion-slide>
+
+       <ion-slide>
+         <ion-card>
+           <img src="assets/img/burger.jpg"/>
+           <ion-card-content>
+             <p style="text-align:left">Burger Shop</p>
+             <ion-row>
+             <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+             <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+             <ion-col col-2><ion-icon name="star-half" style="color:#ffd11a"></ion-icon></ion-col>
+             <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+             <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+             </ion-row>
+           </ion-card-content>
+         </ion-card>
+        </ion-slide>
+
+         <ion-slide>
+          <ion-card>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9lr06MgLbsF-sHPqo2pbML43lxet6x77Bb0R2ohviN52jF-V"/>
+              <ion-card-content>
+                  <p style="text-align:left"> Vegeatble seeds</p>
+                  <ion-row>
+                  <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+                  <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+                  <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+                  <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+                  <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+                  </ion-row>
+              </ion-card-content>
+          </ion-card>
+         </ion-slide>
+
+          <ion-slide>
+            <ion-card>
+              <img src="assets/img/burger.jpg"/>
+              <ion-card-content>
+                <p style="text-align:left">Burger Shop</p>
+                <ion-row>
+                <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+                <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+                <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+                <ion-col col-2><ion-icon name="star" style="color:#ffd11a"></ion-icon></ion-col>
+                <ion-col col-2><ion-icon name="star-outline" style="color:#ffd11a"></ion-icon></ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+    </ion-slides>
+  </ion-row>
+</ion-content>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+</style>
